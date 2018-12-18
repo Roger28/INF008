@@ -6,16 +6,11 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		ImagemRGB iRgb = new ImagemRGB(2, 2);
+		ImagemRGB iRgb = new ImagemRGB(5, 1);
 		iRgb = iRgb.novaImagem();
+		System.out.println(iRgb.toString());
+
 		
-		for (int i = 0; i < iRgb.getAltura(); i++) {
-			for (int j = 0; j < iRgb.getLargura(); j++) {
-				System.out.println(iRgb.getPixel(i, j).toString());
-				
-	
-			}
-		}
 
 	}
 }

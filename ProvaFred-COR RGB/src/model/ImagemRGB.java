@@ -9,7 +9,7 @@ public class ImagemRGB {
 
 		for (int i = 0; i < this.imagem.length; i++) {
 			for (int j = 0; j < this.imagem[i].length; j++) {
-				this.imagem[i][j] = new CorRGB(255, 255, 255);
+				this.imagem[i][j] = new CorRGB(255, 155, 255);
 			}
 		}
 	}
@@ -57,6 +57,18 @@ public class ImagemRGB {
 			}
 		}
 		return true;
+	}
+	
+	public String toString() {
+		String rep = "";
+		
+		for(int i = 0; i < this.getAltura(); i++) {
+			for(int j = 0; j < this.getLargura(); j++) {
+				rep += this.getPixel(i, j) + " ";
+			}
+			rep += "\n";
+		}
+		return rep;
 	}
 
 }
